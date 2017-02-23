@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :pins
   devise_for :users
   root 'home#index'
 
@@ -7,5 +8,7 @@ Rails.application.routes.draw do
   get 'home/contact'
 
   get 'home/faq'
+
+  mount ActionCable.server => '/cable'
 
  end

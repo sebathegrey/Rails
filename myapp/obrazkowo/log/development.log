@@ -788,3 +788,1607 @@ Migrating to DeviseCreateUsers (20170217192825)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 [0m
+Started GET "/" for 127.0.0.1 at 2017-02-21 02:26:28 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (39.5ms)
+Completed 500 Internal Server Error in 189ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sp/workspace/myapp/obrazkowo/app/views/layouts/application.html.erb:15: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  			 content_tag(:div,msg,class:alert "alert-info")
+  			                                   ^
+/home/sp/workspace/myapp/obrazkowo/app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting keyword_end
+/home/sp/workspace/myapp/obrazkowo/app/views/layouts/application.html.erb:23: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/sp/workspace/myapp/obrazkowo/app/views/layouts/application.html.erb:25: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting keyword_end
+app/views/layouts/application.html.erb:23: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/layouts/application.html.erb:25: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (35.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (38.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (145.5ms)
+Started GET "/" for 127.0.0.1 at 2017-02-21 02:27:45 -0800
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered home/_header.html.erb (1.1ms)
+Completed 200 OK in 993ms (Views: 991.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sing_up" for 127.0.0.1 at 2017-02-21 02:28:19 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/users/sing_up"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.0ms)
+  Rendered collection of /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [19 times] (161.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (83.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (470.0ms)
+Started GET "/" for 192.168.0.11 at 2017-02-21 02:29:28 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (10.0ms)
+  Rendered home/_header.html.erb (2.3ms)
+Completed 200 OK in 269ms (Views: 253.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 192.168.0.11 at 2017-02-21 02:32:20 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (6.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (186.8ms)
+  Rendered home/_header.html.erb (4.1ms)
+Completed 200 OK in 535ms (Views: 415.2ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/users/sign_up" for 192.168.0.11 at 2017-02-21 02:43:34 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (12.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (69.1ms)
+  Rendered home/_header.html.erb (1.1ms)
+Completed 200 OK in 246ms (Views: 186.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/sign_up" for 192.168.0.11 at 2017-02-21 02:43:54 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.3ms)
+  Rendered home/_header.html.erb (2.1ms)
+Completed 200 OK in 68ms (Views: 66.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 192.168.0.11 at 2017-02-21 02:43:57 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.6ms)
+  Rendered home/_header.html.erb (1.1ms)
+Completed 200 OK in 71ms (Views: 69.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 192.168.0.11 at 2017-02-21 02:49:06 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (11.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (45.1ms)
+  Rendered home/_header.html.erb (3.0ms)
+Completed 200 OK in 217ms (Views: 198.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 192.168.0.11 at 2017-02-21 02:49:12 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (34.5ms)
+  Rendered home/_header.html.erb (0.8ms)
+Completed 200 OK in 135ms (Views: 118.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 192.168.0.11 at 2017-02-21 02:50:11 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (11.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (44.4ms)
+  Rendered home/_header.html.erb (1.6ms)
+Completed 200 OK in 175ms (Views: 168.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 192.168.0.11 at 2017-02-21 03:12:20 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (30.7ms)
+  Rendered home/_header.html.erb (2.3ms)
+Completed 200 OK in 213ms (Views: 200.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 192.168.0.11 at 2017-02-21 03:13:13 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (19.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (56.8ms)
+  Rendered home/_header.html.erb (1.4ms)
+Completed 200 OK in 218ms (Views: 214.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 192.168.0.11 at 2017-02-21 03:13:59 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (27.7ms)
+  Rendered home/_header.html.erb (2.2ms)
+Completed 200 OK in 215ms (Views: 189.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 192.168.0.11 at 2017-02-21 03:15:08 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (18.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (36.5ms)
+  Rendered home/_header.html.erb (1.9ms)
+Completed 200 OK in 207ms (Views: 203.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 192.168.0.11 at 2017-02-21 03:15:29 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (39.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (76.1ms)
+  Rendered home/_header.html.erb (1.7ms)
+Completed 200 OK in 267ms (Views: 257.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 192.168.0.11 at 2017-02-21 03:16:18 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (7.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (55.9ms)
+  Rendered home/_header.html.erb (4.5ms)
+Completed 200 OK in 261ms (Views: 251.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 192.168.0.11 at 2017-02-21 03:16:43 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (18.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (26.7ms)
+  Rendered home/_header.html.erb (1.4ms)
+Completed 200 OK in 180ms (Views: 178.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 192.168.0.11 at 2017-02-21 03:17:14 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (11.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (38.1ms)
+  Rendered home/_header.html.erb (1.9ms)
+Completed 200 OK in 197ms (Views: 195.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 192.168.0.11 at 2017-02-21 03:17:27 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.0ms)
+  Rendered home/_header.html.erb (1.0ms)
+Completed 200 OK in 112ms (Views: 110.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 192.168.0.11 at 2017-02-21 03:21:55 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (9.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (39.5ms)
+  Rendered home/_header.html.erb (1.2ms)
+Completed 200 OK in 177ms (Views: 174.6ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePins (20170221113202)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (16.7ms)[0m  [1m[35mCREATE TABLE "pins" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (3.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170221113202"]]
+  [1m[35m (46.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/" for 192.168.0.11 at 2017-02-21 03:34:02 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+  Rendered home/_header.html.erb (1.1ms)
+Completed 200 OK in 555ms (Views: 551.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.11 at 2017-02-21 03:34:03 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+  Rendered home/_header.html.erb (1.5ms)
+Completed 200 OK in 146ms (Views: 143.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.11 at 2017-02-21 03:34:05 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered home/_header.html.erb (1.0ms)
+Completed 200 OK in 188ms (Views: 177.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.11 at 2017-02-21 03:34:06 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+  Rendered home/_header.html.erb (0.8ms)
+Completed 200 OK in 104ms (Views: 95.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.11 at 2017-02-21 03:34:08 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+  Rendered home/_header.html.erb (2.3ms)
+Completed 200 OK in 108ms (Views: 105.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/about" for 192.168.0.11 at 2017-02-21 03:34:10 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#about as HTML
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (10.2ms)
+  Rendered home/_header.html.erb (1.8ms)
+Completed 200 OK in 163ms (Views: 123.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.11 at 2017-02-21 03:34:12 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+  Rendered home/_header.html.erb (0.7ms)
+Completed 200 OK in 111ms (Views: 100.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.11 at 2017-02-21 03:34:12 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered home/_header.html.erb (1.0ms)
+Completed 200 OK in 114ms (Views: 110.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 192.168.0.11 at 2017-02-21 03:34:15 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (17.1ms)
+  Rendered home/_header.html.erb (0.9ms)
+Completed 200 OK in 163ms (Views: 121.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 192.168.0.11 at 2017-02-21 03:34:18 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+  Rendered home/_header.html.erb (1.0ms)
+Completed 200 OK in 127ms (Views: 126.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-21 03:34:35 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (0.7ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (9.4ms)
+  Rendered home/_header.html.erb (1.7ms)
+Completed 200 OK in 165ms (Views: 149.5ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/pins/new" for 192.168.0.11 at 2017-02-21 03:34:39 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#new as HTML
+  Rendering pins/new.html.erb within layouts/application
+  Rendered pins/_form.html.erb (22.8ms)
+  Rendered pins/new.html.erb within layouts/application (33.7ms)
+  Rendered home/_header.html.erb (2.3ms)
+Completed 200 OK in 423ms (Views: 340.8ms | ActiveRecord: 5.3ms)
+
+
+Started POST "/pins" for 192.168.0.11 at 2017-02-21 03:34:43 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3zWPdjl7Ypj06JKGQdRoeXXRURf8YzHFOnTfEojZmGRp2DhMv3Moy0x0CXWfoP98iN+iMDJunsDMepD60qY4RA==", "pin"=>{"description"=>"ssdasdsdasdas"}, "commit"=>"Create Pin"}
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (16.3ms)[0m  [1m[32mINSERT INTO "pins" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "ssdasdsdasdas"], ["created_at", 2017-02-21 11:34:43 UTC], ["updated_at", 2017-02-21 11:34:43 UTC]]
+  [1m[35m (18.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.0.28:3000/pins/1
+Completed 302 Found in 129ms (ActiveRecord: 35.4ms)
+
+
+Started GET "/pins/1" for 192.168.0.11 at 2017-02-21 03:34:44 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPin Load (0.6ms)[0m  [1m[34mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pins/show.html.erb within layouts/application
+  Rendered pins/show.html.erb within layouts/application (2.5ms)
+  Rendered home/_header.html.erb (1.8ms)
+Completed 200 OK in 316ms (Views: 281.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 192.168.0.11 at 2017-02-21 03:34:53 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+  Rendered home/_header.html.erb (3.4ms)
+Completed 200 OK in 295ms (Views: 276.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-21 03:59:32 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (1.1ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (30.6ms)
+  Rendered home/_header.html.erb (1.8ms)
+Completed 200 OK in 222ms (Views: 211.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/pins/new" for 192.168.0.11 at 2017-02-21 03:59:48 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#new as HTML
+  Rendering pins/new.html.erb within layouts/application
+  Rendered pins/_form.html.erb (14.1ms)
+  Rendered pins/new.html.erb within layouts/application (30.5ms)
+  Rendered home/_header.html.erb (2.3ms)
+Completed 200 OK in 231ms (Views: 222.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-21 03:59:58 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (0.4ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (9.0ms)
+  Rendered home/_header.html.erb (3.5ms)
+Completed 200 OK in 271ms (Views: 266.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pins/new" for 192.168.0.11 at 2017-02-21 04:16:35 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#new as HTML
+  Rendering pins/new.html.erb within layouts/application
+  Rendered pins/_form.html.erb (24.2ms)
+  Rendered pins/new.html.erb within layouts/application (44.0ms)
+  Rendered home/_header.html.erb (2.3ms)
+Completed 200 OK in 266ms (Views: 256.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pins/new" for 192.168.0.11 at 2017-02-21 04:23:31 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#new as HTML
+  Rendering pins/new.html.erb within layouts/application
+  Rendered pins/_form.html.erb (24.7ms)
+  Rendered pins/new.html.erb within layouts/application (27.4ms)
+  Rendered home/_header.html.erb (1.3ms)
+Completed 200 OK in 184ms (Views: 166.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pins" for 192.168.0.11 at 2017-02-21 04:24:25 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xH++AbL5lgfeJqrTrnVOC8Bs5ZSO21D9IeMYyRQ64OugBW1USgb90VWEsfnt3DKcNPJ7K6O9S6zJE1Cki+1jgg==", "pin"=>{"description"=>"seba"}, "commit"=>"Create Pin"}
+  [1m[35m (1.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (49.4ms)[0m  [1m[32mINSERT INTO "pins" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "seba"], ["created_at", 2017-02-21 12:24:25 UTC], ["updated_at", 2017-02-21 12:24:25 UTC]]
+  [1m[35m (59.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.0.28:3000/pins/2
+Completed 302 Found in 186ms (ActiveRecord: 110.1ms)
+
+
+Started GET "/pins/2" for 192.168.0.11 at 2017-02-21 04:24:25 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPin Load (0.7ms)[0m  [1m[34mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pins/show.html.erb within layouts/application
+  Rendered pins/show.html.erb within layouts/application (3.3ms)
+  Rendered home/_header.html.erb (2.1ms)
+Completed 200 OK in 258ms (Views: 234.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-21 04:24:28 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (0.5ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (8.0ms)
+  Rendered home/_header.html.erb (1.5ms)
+Completed 200 OK in 168ms (Views: 164.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pins/new" for 192.168.0.11 at 2017-02-21 04:24:30 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#new as HTML
+  Rendering pins/new.html.erb within layouts/application
+  Rendered pins/_form.html.erb (18.0ms)
+  Rendered pins/new.html.erb within layouts/application (31.9ms)
+  Rendered home/_header.html.erb (1.5ms)
+Completed 200 OK in 210ms (Views: 203.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pins" for 192.168.0.11 at 2017-02-21 04:24:36 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BkdIuv5A60GOq8Pc4Ds709N+VnKk8lJboO4pUu7OChawqv+AeEihEjY3WC8+T6zWLnClVWr//V5W4Ga6tLGqNg==", "pin"=>{"description"=>"seba"}, "commit"=>"Create Pin"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (22.8ms)[0m  [1m[32mINSERT INTO "pins" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "seba"], ["created_at", 2017-02-21 12:24:36 UTC], ["updated_at", 2017-02-21 12:24:36 UTC]]
+  [1m[35m (14.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.0.28:3000/pins/3
+Completed 302 Found in 75ms (ActiveRecord: 37.1ms)
+
+
+Started GET "/pins/3" for 192.168.0.11 at 2017-02-21 04:24:36 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPin Load (0.5ms)[0m  [1m[34mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pins/show.html.erb within layouts/application
+  Rendered pins/show.html.erb within layouts/application (2.3ms)
+  Rendered home/_header.html.erb (5.8ms)
+Completed 200 OK in 262ms (Views: 245.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-21 04:24:39 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (0.7ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (25.4ms)
+  Rendered home/_header.html.erb (2.0ms)
+Completed 200 OK in 258ms (Views: 253.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pins/new" for 192.168.0.11 at 2017-02-21 04:24:46 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#new as HTML
+  Rendering pins/new.html.erb within layouts/application
+  Rendered pins/_form.html.erb (9.1ms)
+  Rendered pins/new.html.erb within layouts/application (19.9ms)
+  Rendered home/_header.html.erb (1.4ms)
+Completed 200 OK in 204ms (Views: 190.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pins" for 192.168.0.11 at 2017-02-21 04:24:50 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BvtLgEV5DLFtqTD9zypzcr+0q3C9ixw/PxP1CRzE4qawFvy6w3FG4tU1qw4RXuR3QrpYV3OGszrJHbrhRrtChg==", "pin"=>{"description"=>"seba"}, "commit"=>"Create Pin"}
+  [1m[35m (12.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (28.8ms)[0m  [1m[32mINSERT INTO "pins" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "seba"], ["created_at", 2017-02-21 12:24:50 UTC], ["updated_at", 2017-02-21 12:24:50 UTC]]
+  [1m[35m (17.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.0.28:3000/pins/4
+Completed 302 Found in 111ms (ActiveRecord: 58.6ms)
+
+
+Started GET "/pins/4" for 192.168.0.11 at 2017-02-21 04:24:50 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPin Load (2.7ms)[0m  [1m[34mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering pins/show.html.erb within layouts/application
+  Rendered pins/show.html.erb within layouts/application (3.1ms)
+  Rendered home/_header.html.erb (2.4ms)
+Completed 200 OK in 175ms (Views: 167.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-21 04:24:52 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (0.4ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (15.2ms)
+  Rendered home/_header.html.erb (1.2ms)
+Completed 200 OK in 213ms (Views: 206.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pins/new" for 192.168.0.11 at 2017-02-21 04:24:54 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#new as HTML
+  Rendering pins/new.html.erb within layouts/application
+  Rendered pins/_form.html.erb (4.4ms)
+  Rendered pins/new.html.erb within layouts/application (7.3ms)
+  Rendered home/_header.html.erb (1.5ms)
+Completed 200 OK in 135ms (Views: 133.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pins" for 192.168.0.11 at 2017-02-21 04:25:04 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RczTMBSC2cAhd4X2yd+a4eSLswGuw/5Bgtxlb1nYU6XzIWQKkoqTk5nrHgUXqw3kGYVAJmDOUUR00iqHA6fzhQ==", "pin"=>{"description"=>"seba"}, "commit"=>"Create Pin"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (13.6ms)[0m  [1m[32mINSERT INTO "pins" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "seba"], ["created_at", 2017-02-21 12:25:04 UTC], ["updated_at", 2017-02-21 12:25:04 UTC]]
+  [1m[35m (15.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.0.28:3000/pins/5
+Completed 302 Found in 73ms (ActiveRecord: 29.1ms)
+
+
+Started GET "/pins/5" for 192.168.0.11 at 2017-02-21 04:25:04 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPin Load (0.7ms)[0m  [1m[34mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering pins/show.html.erb within layouts/application
+  Rendered pins/show.html.erb within layouts/application (3.3ms)
+  Rendered home/_header.html.erb (2.3ms)
+Completed 200 OK in 150ms (Views: 138.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-21 04:25:09 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (0.6ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (7.1ms)
+  Rendered home/_header.html.erb (1.5ms)
+Completed 200 OK in 160ms (Views: 156.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pins/new" for 192.168.0.11 at 2017-02-21 04:26:15 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#new as HTML
+  Rendering pins/new.html.erb within layouts/application
+  Rendered pins/_form.html.erb (10.8ms)
+  Rendered pins/new.html.erb within layouts/application (21.3ms)
+  Rendered home/_header.html.erb (1.5ms)
+Completed 200 OK in 196ms (Views: 186.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pins/new" for 192.168.0.11 at 2017-02-21 04:28:37 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#new as HTML
+  Rendering pins/new.html.erb within layouts/application
+  Rendered pins/_form.html.erb (20.2ms)
+  Rendered pins/new.html.erb within layouts/application (35.9ms)
+  Rendered home/_header.html.erb (1.9ms)
+Completed 200 OK in 293ms (Views: 289.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pins/new" for 192.168.0.11 at 2017-02-21 04:29:26 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#new as HTML
+  Rendering pins/new.html.erb within layouts/application
+  Rendered pins/_form.html.erb (14.2ms)
+  Rendered pins/new.html.erb within layouts/application (17.5ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sp/workspace/myapp/obrazkowo/app/views/pins/_form.html.erb:20: syntax error, unexpected tLABEL, expecting '='
+...uffer.append=( f.submit ,class:'btn btn-primary' );@output_b...
+...                               ^):
+  
+app/views/pins/_form.html.erb:20: syntax error, unexpected tLABEL, expecting '='
+app/views/pins/new.html.erb:3:in `_app_views_pins_new_html_erb__3616040849997414394_70246943737220'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (31.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (15.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (107.0ms)
+Started GET "/pins/new" for 192.168.0.11 at 2017-02-21 04:29:39 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#new as HTML
+  Rendering pins/new.html.erb within layouts/application
+  Rendered pins/_form.html.erb (5.4ms)
+  Rendered pins/new.html.erb within layouts/application (10.1ms)
+  Rendered home/_header.html.erb (1.1ms)
+Completed 200 OK in 121ms (Views: 118.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pins/new" for 192.168.0.11 at 2017-02-21 05:49:16 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#new as HTML
+  Rendering pins/new.html.erb within layouts/application
+  Rendered pins/_form.html.erb (9.5ms)
+  Rendered pins/new.html.erb within layouts/application (20.6ms)
+  Rendered home/_header.html.erb (1.3ms)
+Completed 200 OK in 155ms (Views: 143.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pins" for 192.168.0.11 at 2017-02-21 06:45:43 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PpqqvfAqN2gUv0y35Z1HE3Z+Qg3BZANrJOLiB6mLef1a4HnoCNVcvp8dV52mNDuEguDcsuwCGDrMEqpqNlz6lA==", "pin"=>{"description"=>""}, "commit"=>"Create Pin"}
+  [1m[35m (1.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (13.9ms)[0m  [1m[32mINSERT INTO "pins" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", ""], ["created_at", 2017-02-21 14:45:43 UTC], ["updated_at", 2017-02-21 14:45:43 UTC]]
+  [1m[35m (78.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.0.28:3000/pins/6
+Completed 302 Found in 160ms (ActiveRecord: 93.9ms)
+
+
+Started GET "/pins/6" for 192.168.0.11 at 2017-02-21 06:45:43 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPin Load (2.9ms)[0m  [1m[34mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering pins/show.html.erb within layouts/application
+  Rendered pins/show.html.erb within layouts/application (11.8ms)
+  Rendered home/_header.html.erb (1.8ms)
+Completed 200 OK in 274ms (Views: 253.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-21 06:45:53 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (1.4ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (25.1ms)
+  Rendered home/_header.html.erb (2.1ms)
+Completed 200 OK in 286ms (Views: 277.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/pins/6" for 192.168.0.11 at 2017-02-21 06:45:56 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPin Load (0.3ms)[0m  [1m[34mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering pins/show.html.erb within layouts/application
+  Rendered pins/show.html.erb within layouts/application (2.3ms)
+  Rendered home/_header.html.erb (1.4ms)
+Completed 200 OK in 218ms (Views: 208.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-21 06:45:57 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (0.7ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (20.2ms)
+  Rendered home/_header.html.erb (1.6ms)
+Completed 200 OK in 214ms (Views: 199.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pins/new" for 192.168.0.11 at 2017-02-21 06:46:08 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#new as HTML
+  Rendering pins/new.html.erb within layouts/application
+  Rendered pins/_form.html.erb (17.7ms)
+  Rendered pins/new.html.erb within layouts/application (36.7ms)
+  Rendered home/_header.html.erb (2.4ms)
+Completed 200 OK in 284ms (Views: 273.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-21 06:47:31 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (2.7ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (18.7ms)
+  Rendered home/_header.html.erb (1.6ms)
+Completed 200 OK in 241ms (Views: 235.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/pins/2/edit" for 192.168.0.11 at 2017-02-21 06:47:33 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPin Load (0.2ms)[0m  [1m[34mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pins/edit.html.erb within layouts/application
+  Rendered pins/_form.html.erb (8.3ms)
+  Rendered pins/edit.html.erb within layouts/application (28.3ms)
+  Rendered home/_header.html.erb (1.6ms)
+Completed 200 OK in 257ms (Views: 252.5ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/pins/2" for 192.168.0.11 at 2017-02-21 06:47:49 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zeIKiok8Uw+QiQBvfM8UzoBzKXRbS+idCz9mDKBtloGpmNnfccM42RsrG0U/ZmhZdO23y3Yt88zjzy5hP7oV6A==", "id"=>"2"}
+  [1m[36mPin Load (0.2ms)[0m  [1m[34mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (31.2ms)[0m  [1m[31mDELETE FROM "pins" WHERE "pins"."id" = ?[0m  [["id", 2]]
+  [1m[35m (53.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.0.28:3000/pins
+Completed 302 Found in 161ms (ActiveRecord: 84.8ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-21 06:47:49 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (0.4ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (7.7ms)
+  Rendered home/_header.html.erb (1.7ms)
+Completed 200 OK in 226ms (Views: 202.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pins/1" for 192.168.0.11 at 2017-02-21 06:47:56 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPin Load (1.0ms)[0m  [1m[34mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pins/show.html.erb within layouts/application
+  Rendered pins/show.html.erb within layouts/application (1.9ms)
+  Rendered home/_header.html.erb (5.3ms)
+Completed 200 OK in 275ms (Views: 245.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pins/new" for 192.168.0.11 at 2017-02-21 06:48:56 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#new as HTML
+  Rendering pins/new.html.erb within layouts/application
+  Rendered pins/_form.html.erb (10.6ms)
+  Rendered pins/new.html.erb within layouts/application (25.3ms)
+  Rendered home/_header.html.erb (1.5ms)
+Completed 200 OK in 232ms (Views: 228.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pins/new" for 192.168.0.11 at 2017-02-21 06:49:03 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#new as HTML
+  Rendering pins/new.html.erb within layouts/application
+  Rendered pins/_form.html.erb (8.6ms)
+  Rendered pins/new.html.erb within layouts/application (20.3ms)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sp/workspace/myapp/obrazkowo/app/views/pins/_form.html.erb:20: syntax error, unexpected keyword_class, expecting ')'
+...r.append=( f.submit "sda" class:'btn btn-primary' );@output_...
+...                               ^
+/home/sp/workspace/myapp/obrazkowo/app/views/pins/_form.html.erb:20: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+..."sda" class:'btn btn-primary' );@output_buffer.safe_append='
+...                               ^
+/home/sp/workspace/myapp/obrazkowo/app/views/pins/_form.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/sp/workspace/myapp/obrazkowo/app/views/pins/_form.html.erb:24: syntax error, unexpected keyword_ensure, expecting ')'
+/home/sp/workspace/myapp/obrazkowo/app/views/pins/_form.html.erb:26: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/pins/_form.html.erb:20: syntax error, unexpected keyword_class, expecting ')'
+app/views/pins/_form.html.erb:20: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+app/views/pins/_form.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+app/views/pins/_form.html.erb:24: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/pins/_form.html.erb:26: syntax error, unexpected keyword_end, expecting ')'
+app/views/pins/new.html.erb:3:in `_app_views_pins_new_html_erb__3616040849997414394_70247018480900'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (36.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (15.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (121.8ms)
+Started GET "/pins/new" for 192.168.0.11 at 2017-02-21 06:49:13 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#new as HTML
+  Rendering pins/new.html.erb within layouts/application
+  Rendered pins/_form.html.erb (7.3ms)
+  Rendered pins/new.html.erb within layouts/application (12.5ms)
+  Rendered home/_header.html.erb (1.5ms)
+Completed 200 OK in 235ms (Views: 225.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-21 06:49:15 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (0.4ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (17.7ms)
+  Rendered home/_header.html.erb (3.1ms)
+Completed 200 OK in 218ms (Views: 213.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pins/1/edit" for 192.168.0.11 at 2017-02-21 06:49:17 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPin Load (0.2ms)[0m  [1m[34mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pins/edit.html.erb within layouts/application
+  Rendered pins/_form.html.erb (12.4ms)
+  Rendered pins/edit.html.erb within layouts/application (20.7ms)
+  Rendered home/_header.html.erb (1.5ms)
+Completed 200 OK in 208ms (Views: 200.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pins/1/edit" for 192.168.0.11 at 2017-02-21 06:50:12 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPin Load (0.3ms)[0m  [1m[34mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pins/edit.html.erb within layouts/application
+  Rendered pins/_form.html.erb (16.0ms)
+  Rendered pins/edit.html.erb within layouts/application (32.7ms)
+  Rendered home/_header.html.erb (2.9ms)
+Completed 200 OK in 227ms (Views: 213.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-21 06:52:31 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (1.3ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (67.5ms)
+  Rendered home/_header.html.erb (1.6ms)
+Completed 200 OK in 250ms (Views: 228.4ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-21 06:52:33 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (0.4ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (20.6ms)
+  Rendered home/_header.html.erb (1.9ms)
+Completed 200 OK in 194ms (Views: 187.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-21 06:52:49 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (1.0ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (59.9ms)
+  Rendered home/_header.html.erb (1.7ms)
+Completed 200 OK in 221ms (Views: 197.2ms | ActiveRecord: 15.7ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-21 06:52:52 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (0.4ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (20.2ms)
+  Rendered home/_header.html.erb (1.9ms)
+Completed 200 OK in 209ms (Views: 205.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-21 06:53:00 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (0.7ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (47.5ms)
+  Rendered home/_header.html.erb (1.0ms)
+Completed 200 OK in 171ms (Views: 164.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-21 06:53:19 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (1.9ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (64.9ms)
+  Rendered home/_header.html.erb (1.6ms)
+Completed 200 OK in 272ms (Views: 244.9ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/pins/3/edit" for 192.168.0.11 at 2017-02-21 07:06:48 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPin Load (0.8ms)[0m  [1m[34mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pins/edit.html.erb within layouts/application
+  Rendered pins/_form.html.erb (7.5ms)
+  Rendered pins/edit.html.erb within layouts/application (11.9ms)
+  Rendered home/_header.html.erb (1.8ms)
+Completed 200 OK in 183ms (Views: 139.4ms | ActiveRecord: 2.8ms)
+
+
+Started PATCH "/pins/3" for 192.168.0.11 at 2017-02-21 07:06:51 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v/G/cHBd2t1XLC2m6LoZTHLmzanvHstZypOLbeSoP0I8vcF/gHk3cISa5HbRkRdipzQDt+ijTeKTnI5G/Okyfw==", "pin"=>{"description"=>"seba"}, "commit"=>"sda", "id"=>"3"}
+  [1m[36mPin Load (0.3ms)[0m  [1m[34mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.0.28:3000/pins/3
+Completed 302 Found in 38ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/pins/3" for 192.168.0.11 at 2017-02-21 07:06:51 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPin Load (0.2ms)[0m  [1m[34mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pins/show.html.erb within layouts/application
+  Rendered pins/show.html.erb within layouts/application (11.7ms)
+  Rendered home/_header.html.erb (2.0ms)
+Completed 200 OK in 312ms (Views: 297.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pins/3" for 192.168.0.11 at 2017-02-21 07:09:31 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPin Load (0.4ms)[0m  [1m[34mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pins/show.html.erb within layouts/application
+  Rendered pins/show.html.erb within layouts/application (4.1ms)
+  Rendered home/_header.html.erb (1.3ms)
+Completed 200 OK in 284ms (Views: 257.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-21 07:09:36 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (0.6ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (430.9ms)
+Completed 500 Internal Server Error in 485ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `edit_pi_path' for #<#<Class:0x000000062caf50>:0x000000060f6cb0>
+Did you mean?  edit_pin_path):
+    15:       <tr>
+    16:         <td><%= pin.description %></td>
+    17:         <td><%= link_to 'Show', pin %></td>
+    18:         <td><%= link_to 'Edit', edit_pi_path(pin) %></td>
+    19:         <td><%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    20:       </tr>
+    21:     <% end %>
+  
+app/views/pins/index.html.erb:18:in `block in _app_views_pins_index_html_erb___203370450688793409_50838340'
+app/views/pins/index.html.erb:14:in `_app_views_pins_index_html_erb___203370450688793409_50838340'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (54.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (28.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (208.9ms)
+Started GET "/pins" for 192.168.0.11 at 2017-02-21 07:09:51 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (6.6ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (32.6ms)
+  Rendered home/_header.html.erb (1.6ms)
+Completed 200 OK in 316ms (Views: 288.5ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-21 07:40:18 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (9.0ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (40.9ms)
+  Rendered home/_header.html.erb (1.9ms)
+Completed 200 OK in 273ms (Views: 252.1ms | ActiveRecord: 9.0ms)
+
+
+Started DELETE "/pins/4" for 192.168.0.11 at 2017-02-21 07:59:28 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gtMCjmMywWquJtm08xu+4YUGgiqzuaRqOp1e+NkSvZ/mqdHbm82qvCWEwp6wssJ2cZgclZ7fvzvSbRaVRsU+9g==", "id"=>"4"}
+  [1m[36mPin Load (0.8ms)[0m  [1m[34mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (17.5ms)[0m  [1m[31mDELETE FROM "pins" WHERE "pins"."id" = ?[0m  [["id", 4]]
+  [1m[35m (65.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.0.28:3000/pins
+Completed 302 Found in 175ms (ActiveRecord: 84.6ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-21 07:59:29 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (2.4ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (32.1ms)
+  Rendered home/_header.html.erb (2.4ms)
+Completed 200 OK in 291ms (Views: 283.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-21 08:01:44 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (0.7ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (26.1ms)
+  Rendered home/_header.html.erb (5.6ms)
+Completed 200 OK in 334ms (Views: 323.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pins/3/edit" for 192.168.0.11 at 2017-02-21 08:01:50 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPin Load (2.8ms)[0m  [1m[34mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pins/edit.html.erb within layouts/application
+  Rendered pins/_form.html.erb (9.1ms)
+  Rendered pins/edit.html.erb within layouts/application (13.4ms)
+  Rendered home/_header.html.erb (1.8ms)
+Completed 200 OK in 248ms (Views: 216.1ms | ActiveRecord: 2.8ms)
+
+
+Started PATCH "/pins/3" for 192.168.0.11 at 2017-02-21 08:03:02 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qp9LPlz8FiDdcPJ+14op0b2sHcXwWdoNXA5rryrOglMp0zUxrNj7jQ7GO67uoSf/aH7T2/fkXLYFAW6EMo+Pbg==", "pin"=>{"description"=>"seba"}, "commit"=>"Update Pin", "id"=>"3"}
+  [1m[36mPin Load (0.2ms)[0m  [1m[34mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.0.28:3000/pins/3
+Completed 302 Found in 38ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/pins/3" for 192.168.0.11 at 2017-02-21 08:03:02 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPin Load (0.2ms)[0m  [1m[34mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pins/show.html.erb within layouts/application
+  Rendered pins/show.html.erb within layouts/application (2.0ms)
+  Rendered home/_header.html.erb (1.4ms)
+Completed 200 OK in 153ms (Views: 146.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-21 08:03:14 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (0.5ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (41.0ms)
+  Rendered home/_header.html.erb (1.6ms)
+Completed 200 OK in 244ms (Views: 240.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pins/6/edit" for 192.168.0.11 at 2017-02-21 08:03:16 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPin Load (0.3ms)[0m  [1m[34mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering pins/edit.html.erb within layouts/application
+  Rendered pins/_form.html.erb (14.0ms)
+  Rendered pins/edit.html.erb within layouts/application (33.1ms)
+  Rendered home/_header.html.erb (1.7ms)
+Completed 200 OK in 220ms (Views: 206.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pins/6/edit" for 192.168.0.11 at 2017-02-21 09:43:21 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPin Load (0.7ms)[0m  [1m[34mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering pins/edit.html.erb within layouts/application
+  Rendered pins/_form.html.erb (16.8ms)
+  Rendered pins/edit.html.erb within layouts/application (25.4ms)
+  Rendered home/_header.html.erb (2.5ms)
+Completed 200 OK in 234ms (Views: 208.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-21 09:43:56 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (2.6ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (70.7ms)
+  Rendered home/_header.html.erb (1.9ms)
+Completed 200 OK in 291ms (Views: 281.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-22 14:59:41 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (0.6ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (82.6ms)
+  Rendered home/_header.html.erb (1.6ms)
+Completed 200 OK in 2568ms (Views: 2478.9ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/pins/new" for 192.168.0.11 at 2017-02-22 14:59:56 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#new as HTML
+  Rendering pins/new.html.erb within layouts/application
+  Rendered pins/_form.html.erb (203.3ms)
+  Rendered pins/new.html.erb within layouts/application (229.6ms)
+  Rendered home/_header.html.erb (22.8ms)
+Completed 200 OK in 496ms (Views: 451.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pins" for 192.168.0.11 at 2017-02-22 15:00:02 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2nQaCO9K7cW2a/XlrPiXoy73zMMMofqFAi9Cb1hWxY43fAEkJtCQsGC77VwpWJksmpIImWKb+f7NxyT2UcQzDA==", "pin"=>{"description"=>"ADDDDD"}, "commit"=>"Create Pin"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (9.0ms)[0m  [1m[32mINSERT INTO "pins" ("description", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["description", "ADDDDD"], ["created_at", 2017-02-22 23:00:02 UTC], ["updated_at", 2017-02-22 23:00:02 UTC]]
+  [1m[35m (87.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.0.28:3000/pins/7
+Completed 302 Found in 184ms (ActiveRecord: 96.5ms)
+
+
+Started GET "/pins/7" for 192.168.0.11 at 2017-02-22 15:00:02 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPin Load (0.6ms)[0m  [1m[34mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering pins/show.html.erb within layouts/application
+  Rendered pins/show.html.erb within layouts/application (11.3ms)
+  Rendered home/_header.html.erb (3.3ms)
+Completed 200 OK in 329ms (Views: 284.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-22 15:00:06 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (0.9ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (14.2ms)
+  Rendered home/_header.html.erb (3.3ms)
+Completed 200 OK in 358ms (Views: 297.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/home/about" for 192.168.0.11 at 2017-02-22 15:00:26 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#about as HTML
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (1.6ms)
+  Rendered home/_header.html.erb (2.0ms)
+Completed 200 OK in 202ms (Views: 184.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.11 at 2017-02-22 15:00:32 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (11.8ms)
+  Rendered home/_header.html.erb (3.0ms)
+Completed 200 OK in 378ms (Views: 337.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.11 at 2017-02-22 15:00:39 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.4ms)
+  Rendered home/_header.html.erb (1.4ms)
+Completed 200 OK in 226ms (Views: 220.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.11 at 2017-02-22 15:00:41 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.6ms)
+  Rendered home/_header.html.erb (1.8ms)
+Completed 200 OK in 328ms (Views: 326.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-22 15:14:08 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (1.7ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (14.1ms)
+  Rendered home/_header.html.erb (1.3ms)
+Completed 200 OK in 270ms (Views: 244.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/pins/7" for 192.168.0.11 at 2017-02-22 15:14:13 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPin Load (0.3ms)[0m  [1m[34mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering pins/show.html.erb within layouts/application
+  Rendered pins/show.html.erb within layouts/application (15.5ms)
+  Rendered home/_header.html.erb (2.7ms)
+Completed 200 OK in 299ms (Views: 294.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/pins/7" for 192.168.0.11 at 2017-02-22 15:14:18 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/ZpHrFg4CDs5KcoJzSOWHHloHASaaHcIulbuCrREnUuG+XL8GKd/LvZX8pWCpUVmX6YxTGevqG+tx+n1BSy5nw==", "id"=>"7"}
+  [1m[36mPin Load (0.3ms)[0m  [1m[34mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (16.6ms)[0m  [1m[31mDELETE FROM "pins" WHERE "pins"."id" = ?[0m  [["id", 7]]
+  [1m[35m (22.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.0.28:3000/pins
+Completed 302 Found in 191ms (ActiveRecord: 39.5ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-22 15:14:18 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (0.6ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (34.7ms)
+  Rendered home/_header.html.erb (2.0ms)
+Completed 200 OK in 238ms (Views: 231.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pins/7" for 192.168.0.11 at 2017-02-22 15:14:31 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPin Load (0.2ms)[0m  [1m[34mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+Completed 404 Not Found in 12ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Pin with 'id'=7):
+  
+app/controllers/pins_controller.rb:67:in `set_pin'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (37.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (26.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (200.1ms)
+Started GET "/pins" for 192.168.0.11 at 2017-02-22 15:14:36 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (0.4ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (32.3ms)
+  Rendered home/_header.html.erb (7.7ms)
+Completed 200 OK in 277ms (Views: 269.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-22 15:43:48 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (1.9ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (21.1ms)
+  Rendered home/_header.html.erb (2.5ms)
+Completed 200 OK in 289ms (Views: 281.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/cables" for 192.168.0.11 at 2017-02-22 15:43:53 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/s"[non-WebSocket] for 192.168.0.11 at 2017-02-22 15:43:54 -0800
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, HTTP_UPGRADE: )
+Finished "/cable/s"[non-WebSocket] for 192.168.0.11 at 2017-02-22 15:43:54 -0800
+Started GET "/cablesw" for 192.168.0.11 at 2017-02-22 15:44:00 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/sw"[non-WebSocket] for 192.168.0.11 at 2017-02-22 15:44:00 -0800
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, HTTP_UPGRADE: )
+Finished "/cable/sw"[non-WebSocket] for 192.168.0.11 at 2017-02-22 15:44:00 -0800
+Started GET "/cable" for 192.168.0.11 at 2017-02-22 15:44:32 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/cable/"[non-WebSocket] for 192.168.0.11 at 2017-02-22 15:44:32 -0800
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, HTTP_UPGRADE: )
+Finished "/cable/"[non-WebSocket] for 192.168.0.11 at 2017-02-22 15:44:32 -0800
+Started GET "/cable/seba" for 192.168.0.11 at 2017-02-22 15:45:00 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/seba"[non-WebSocket] for 192.168.0.11 at 2017-02-22 15:45:00 -0800
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, HTTP_UPGRADE: )
+Finished "/cable/seba"[non-WebSocket] for 192.168.0.11 at 2017-02-22 15:45:00 -0800
+Started GET "/cabdasffdsgfsd" for 192.168.0.11 at 2017-02-22 15:45:13 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/cabdasffdsgfsd"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered collection of /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [27 times] (68.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (54.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (34.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (279.8ms)
+Started GET "/cable" for 192.168.0.11 at 2017-02-22 16:07:14 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/cable/"[non-WebSocket] for 192.168.0.11 at 2017-02-22 16:07:14 -0800
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, HTTP_UPGRADE: )
+Finished "/cable/"[non-WebSocket] for 192.168.0.11 at 2017-02-22 16:07:14 -0800
+Started GET "/users/sign_up" for 192.168.0.11 at 2017-02-22 16:07:54 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (5.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (163.8ms)
+  Rendered home/_header.html.erb (2.9ms)
+Completed 200 OK in 3494ms (Views: 3384.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/cable" for 192.168.0.11 at 2017-02-22 16:07:58 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.11 at 2017-02-22 16:07:58 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MyLinkChannel is transmitting the subscription confirmation
+Started POST "/users" for 192.168.0.11 at 2017-02-22 16:08:16 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ftjkt6JGj4zq2ugeO9jCn1ooe82Ja9vaPkqpjCe9pZRtu9Hn4tn4mSWk0IJ0XhHlfOZWhXSsBL0p265zltWBQA==", "user"=>{"email"=>"sebastian.przybyl93@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sebastian.przybyl93@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (16.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "sebastian.przybyl93@gmail.com"], ["encrypted_password", "$2a$11$2loHgSzRtk1fMQyNSmiVnOJezUOXtWtiL5iy2.5N1oksttYry97M2"], ["created_at", 2017-02-23 00:08:17 UTC], ["updated_at", 2017-02-23 00:08:17 UTC]]
+  [1m[35m (16.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.2ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", 2017-02-23 00:08:17 UTC], ["last_sign_in_at", 2017-02-23 00:08:17 UTC], ["current_sign_in_ip", "192.168.0.11"], ["last_sign_in_ip", "192.168.0.11"], ["updated_at", 2017-02-23 00:08:17 UTC], ["id", 1]]
+  [1m[35m (15.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.0.28:3000/
+Completed 302 Found in 651ms (ActiveRecord: 53.1ms)
+
+
+Started GET "/" for 192.168.0.11 at 2017-02-22 16:08:17 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+  Rendered home/_header.html.erb (1.8ms)
+Completed 200 OK in 147ms (Views: 137.8ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.11 at 2017-02-22 16:08:17 -0800
+Started GET "/cable" for 192.168.0.11 at 2017-02-22 16:08:17 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.11 at 2017-02-22 16:08:17 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MyLinkChannel is transmitting the subscription confirmation
+Started GET "/users/sign_in" for 192.168.0.11 at 2017-02-22 16:08:38 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://192.168.0.28:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 23ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 192.168.0.11 at 2017-02-22 16:08:38 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+  Rendered home/_header.html.erb (1.6ms)
+Completed 200 OK in 227ms (Views: 222.7ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.11 at 2017-02-22 16:08:39 -0800
+Started GET "/cable" for 192.168.0.11 at 2017-02-22 16:08:39 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.11 at 2017-02-22 16:08:39 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MyLinkChannel is transmitting the subscription confirmation
+Started GET "/cable" for 192.168.0.11 at 2017-02-22 16:09:02 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/"[non-WebSocket] for 192.168.0.11 at 2017-02-22 16:09:02 -0800
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, HTTP_UPGRADE: )
+Finished "/cable/"[non-WebSocket] for 192.168.0.11 at 2017-02-22 16:09:02 -0800
+Finished "/cable/" [WebSocket] for 192.168.0.11 at 2017-02-22 16:09:02 -0800
+Started GET "/pins" for 192.168.0.11 at 2017-02-22 16:09:14 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (0.8ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (28.9ms)
+  Rendered home/_header.html.erb (1.4ms)
+Completed 200 OK in 218ms (Views: 201.0ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/cable" for 192.168.0.11 at 2017-02-22 16:09:15 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.11 at 2017-02-22 16:09:15 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MyLinkChannel is transmitting the subscription confirmation
+Started DELETE "/pins/1" for 192.168.0.11 at 2017-02-22 16:09:26 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iYmjyIRIxboTojfB7RQVNUcbPjb5VanNlUZD5+Q99MHy6paYxNeyr9zcD12iksZPYdUTfgSSdqqC10QYVVXQFQ==", "id"=>"1"}
+  [1m[36mPin Load (0.4ms)[0m  [1m[34mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (13.1ms)[0m  [1m[31mDELETE FROM "pins" WHERE "pins"."id" = ?[0m  [["id", 1]]
+  [1m[35m (18.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.0.28:3000/pins
+Completed 302 Found in 97ms (ActiveRecord: 32.1ms)
+
+
+Started GET "/pins" for 192.168.0.11 at 2017-02-22 16:09:27 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (4.2ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (49.1ms)
+  Rendered home/_header.html.erb (2.4ms)
+Completed 200 OK in 276ms (Views: 260.6ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/cable" for 192.168.0.11 at 2017-02-22 16:09:27 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.11 at 2017-02-22 16:09:27 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MyLinkChannel is transmitting the subscription confirmation
+Started GET "/pins/1" for 192.168.0.11 at 2017-02-22 16:09:43 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPin Load (0.6ms)[0m  [1m[34mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 23ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Pin with 'id'=1):
+  
+app/controllers/pins_controller.rb:67:in `set_pin'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (25.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (129.8ms)
+Started GET "/pins" for 192.168.0.11 at 2017-02-22 16:09:46 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (0.4ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (16.3ms)
+  Rendered home/_header.html.erb (1.4ms)
+Completed 200 OK in 192ms (Views: 173.3ms | ActiveRecord: 0.4ms)
+
+
+Finished "/cable/" [WebSocket] for 192.168.0.11 at 2017-02-22 16:09:47 -0800
+Started GET "/cable" for 192.168.0.11 at 2017-02-22 16:09:47 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.11 at 2017-02-22 16:09:47 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MyLinkChannel is transmitting the subscription confirmation
+Started GET "/message" for 192.168.0.11 at 2017-02-22 16:12:50 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/message"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.3ms)
+  Rendered collection of /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [28 times] (927.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1745.1ms)
+Finished "/cable/" [WebSocket] for 192.168.0.11 at 2017-02-22 16:12:52 -0800
+Started GET "/cable" for 192.168.0.11 at 2017-02-22 16:13:15 -0800
+Cannot render console from 192.168.0.11! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/cable/" [WebSocket] for 192.168.0.11 at 2017-02-22 16:13:15 -0800
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MyLinkChannel is transmitting the subscription confirmation
+Finished "/cable/" [WebSocket] for 192.168.0.11 at 2017-02-22 17:15:03 -0800
