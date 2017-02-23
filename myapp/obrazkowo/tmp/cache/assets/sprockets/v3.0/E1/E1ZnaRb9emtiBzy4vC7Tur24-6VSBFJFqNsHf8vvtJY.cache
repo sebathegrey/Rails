@@ -1,0 +1,31 @@
+I"(function() {
+  App.my_link = App.cable.subscriptions.create("MyLinkChannel", {
+    connected: function() {},
+    disconnected: function() {},
+    received: function(data) {},
+    speak: function() {
+      return this.perform('speak');
+    }
+  });
+
+  $(document).on('keypress', '#my_link-speak', function(event) {
+    if (event.keyCode === 13) {
+      App.my_link.speak(event.target.value);
+      event.target.value = "";
+      event.preventDefault();
+      App.my_link = App.cable.subscriptions.create("ChatChannel");
+    }
+    return {
+      received: function(data) {
+        return $('#messages').append(data.message);
+      },
+      speak: function(msg) {
+        return this.perform('speak', {
+          message: msg
+        });
+      }
+    };
+  });
+
+}).call(this);
+:ET
