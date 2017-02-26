@@ -5,7 +5,10 @@ class ListsController < ApplicationController
   # GET /lists
   # GET /lists.json
   def index
-    @lists = List.all
+    
+    $globalid = params.require(:my_list_id)
+    @lists = List.where(:my_list_id => $globalid)
+    #@lists = List.all
   end
 
   # GET /lists/1
@@ -15,8 +18,10 @@ class ListsController < ApplicationController
 
   # GET /lists/new
   def new
-    @list = MyList.find_by_name("SSS").lists.build
-   # @list.my_lists_id = MyList.find_by_name("Seba").id 
+
+   @list = List.new
+
+    @list.my_list= MyList.find_by_id($globalid.to_i)
   end
 
   # GET /lists/1/edit
@@ -28,10 +33,8 @@ class ListsController < ApplicationController
   def create
 
     @list = List.new(list_params)
-    @list.my_list = MyList.find_by_name("SSS")
-    
 
-    #@list = MyList.find_by_name("SSS").lists.build(list_params)
+    @list.my_list= MyList.find_by_id($globalid.to_i)
 
 
     respond_to do |format|
@@ -64,7 +67,7 @@ class ListsController < ApplicationController
   def destroy
     @list.destroy
     respond_to do |format|
-      format.html { redirect_to lists_url, notice: 'List was successfully destroyed.' }
+      format.html { redirect_to lists_url(:my_list_id => $globalid), notice: 'List was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
