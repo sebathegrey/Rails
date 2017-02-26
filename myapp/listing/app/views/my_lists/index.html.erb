@@ -1,29 +1,38 @@
 <p id="notice"><%= notice %></p>
+<p id="notice"><%= notice %></p>
+<div class="panel panel-default">
+  <div class="panel-heading"><h1>My Lists</h1></div>
+  <div class="panel-body">
 
-<h1>My Lists</h1>
+    <div class="panel ">
+     <div class="row panel-default panel-heading">
+      <div class="col-md-2 form-group mydiv">Name</div>
+      <div class="col-md-2 form-group mydiv"></div>
+      <div class="col-md-2 form-group mydiv">Options</div>
+      <div class="col-md-2 form-group"></div>
+      <div class="col-md-2 form-group"></div>
+      <div class="col-md-2 form-group"></div>
+    </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <div class="panel-body">
+      <% @my_lists.each do |my_list| %>
 
-  <tbody>
-    <% @my_lists.each do |my_list| %>
-      <tr>
       <% if my_list.user == current_user %>
-        <td><%= my_list.name %></td>
-        <td><%= link_to 'Show', lists_path(:my_list_id => my_list.id) %></td>
-        <td><%= link_to 'Edit', edit_my_list_path(my_list) %></td>
-        <td><%= link_to 'Destroy', my_list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <%end%>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New My List', new_my_list_path %>
+      <div class="row form-group">
+        <div class="col-md-2 form-group mydivel"><%= my_list.name %></div>
+        <div class="col-md-2 form-group mydivel"></div>
+        <div class="col-md-2 form-group mydivel"><%= link_to 'Show/Add', lists_path(:my_list_id => my_list.id) %></div>
+        <div class="col-md-2 form-group mydivel"><%= link_to 'Edit', edit_my_list_path(my_list) %></div>
+        <div class="col-md-2 form-group mydivel"><%= link_to 'Destroy', my_list, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+        <div class="col-md-2 form-group mydivel"></div>
+      </div>
+      <%end%>
+      <% end %>
+    </div>
+  </div>
+  <div class="panel-footer">
+    <div class="actions ">
+      <%= link_to 'New My List', new_my_list_path,class:"btn btn-success" %>
+    </div>
+  </div>
+</div>

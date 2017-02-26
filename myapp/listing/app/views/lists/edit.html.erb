@@ -1,6 +1,8 @@
-<h1>Editing List</h1>
+<div class="panel-body panel panel-default">
+  <div class="panel-heading"><h1>Editing Task</h1></div>
+  <div class=""><h3><%= render 'form', list: @list %></h3></div>
 
-<%= render 'form', list: @list %>
-
-<%= link_to 'Show', @list %> |
-<%= link_to 'Back', lists_path %>
+<div class="panel-footer"> 
+	<%= link_to 'Show', @list %> |
+	<%= link_to 'Back', lists_path %>
+</div>

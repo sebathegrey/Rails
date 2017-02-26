@@ -1,15 +1,20 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @list.description %>
-</p>
+<div class="panel-body panel panel-default">
+  <div class="row form-group">
+    <div class="col-md-3 form-group"><h3>Description:</h3></div>
+    <div class="col-md-3 form-group"><h3>  <%= @list.description %></h3></div>
 
-<p>
-  <strong>Done:</strong>
-  <%= @list.done %>
-</p>
+    <div class="col-md-3 form-group"><h3>Done:</h3></div>
 
+    <%if @list.done == true %>
+    <div class="glyphicon glyphicon-ok col-md-3 form-group"></div>
+    <%else%>
+    <div class="glyphicon glyphicon-remove"></div>
+    <%end%>
+  </div>
 
-<%= link_to 'Edit', edit_list_path(@list) %> |
-<%= link_to 'Back', lists_path(:my_list_id => $globalid) %>
+  <div class="panel-footer"> 
+   <%= link_to 'Edit', edit_list_path(@list) %> |
+   <%= link_to 'Back', lists_path(:my_list_id => $globalid) %>
+ </div>

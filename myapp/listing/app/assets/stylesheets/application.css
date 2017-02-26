@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+.glyphicon {
+    font-size: 50px;
+}
+.lay {
+	background-color: #ffcc66;
+}
+
+.mydiv {
+	font-size: 25px;
+
+}
+
+.mydivel {
+	font-size: 20px;
+}

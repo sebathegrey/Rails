@@ -1,5 +1,8 @@
-<h1>New List</h1>
-
+<div class="panel panel-default">
+	<div class="panel-heading"> 
+		<h1>New Task</h1></div>
+  	<div class="panel-body">
 <%= render 'form', list: @list %>
 
-<%= link_to 'Back', lists_path %>
+</div>
+    <div class="panel-footer"> <%= link_to 'Back', lists_path(:my_list_id =>$globalid)  %></div>

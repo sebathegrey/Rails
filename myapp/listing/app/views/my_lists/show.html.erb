@@ -1,10 +1,13 @@
 <p id="notice"><%= notice %></p>
+<div class="panel-body panel panel-default">
 
-<p>
-  <strong>Name:</strong>
-  <%= @my_list.name %>
-</p>
+  <div class="panel-heading"><h1>My list name:</h1></div>
+  <div class="form-group"><h3><%= @my_list.name %></h3></div>
+  
 
 
-<%= link_to 'Edit', edit_my_list_path(@my_list) %> |
-<%= link_to 'Back', my_lists_path %>
+ 	<div class="panel-footer"> 
+		<%= link_to 'Edit', edit_my_list_path(@my_list) %> |
+		<%= link_to 'Back', my_lists_path %> |
+		<%= link_to 'Add task', lists_path(:my_list_id =>@my_list.id) %> 
+	</div>

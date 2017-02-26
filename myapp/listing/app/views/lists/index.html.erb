@@ -1,36 +1,42 @@
 <p id="notice"><%= notice %></p>
+<div class="panel panel-default">
+  <div class="panel-heading"><h1><%=@head_name%></h1></div>
+  <div class="panel-body">
 
-<h1>fff</h1>
+    <div class="panel ">
+      <div class="row panel-default panel-heading">
 
+        <div class="col-md-2 form-group mydiv" >Task</div>
+        <div class="col-md-2 form-group mydiv" >Done</div>
+        <div class="col-md-2 form-group mydiv"></div>
+        <div class="col-md-2 form-group mydiv">Options</div>
+        <div class="col-md-2 form-group mydiv"></div>
+        <div class="col-md-2 form-group"></div>
+      </div>
 
-  <div class="row form-group">
-    
-      <div class="col-md-2 form-group">Task</div>
-      <div class="col-md-2">Done</div>
-      <div class="col-md-2">List</div>
-      <div class="col-md-2"></div>
-      <div class="col-md-2"></div>
-      <div class="col-md-2"></div>
-    
+      <div class="panel-body">
+        <% @lists.each do |list| %>
+        <div class="row form-group">
+          <div class="col-md-2 form-group mydivel"><%= list.description %></div>
+          <%if list.done == true %>
+          <div class="col-md-2 glyphicon glyphicon-ok mydivel" ></div>
+          <%else%>
+          <div class="col-md-2 glyphicon glyphicon-remove mydivel"></div>
+          <%end%>
+          <div class="col-md-2 form-group"></div>
+          <div class="col-md-2 form-group mydivel"><%= link_to 'Show', list %></div>
+          <%if user_signed_in?%>
+          <div class="col-md-2 form-group mydivel"><%= link_to 'Edit', edit_list_path(list) %></div>
+          <div class="col-md-2 form-group mydivel"><%= link_to 'Destroy', list , method: :delete, data: { confirm: 'Are you sure?' } %></div>
+        </div>
+        <%end%>
+        <% end %>
+      </div>
+    </div>
   </div>
 
-
-    <% @lists.each do |list| %>
-      <div class="row">
-
-        <div class="col-md-2 form-group"><%= list.description class:"form-control" %></div>
-      
-        <div class="col-md-2"><%= list.done %></div>
-      
-        <div class="col-md-2"><%= list.id %></div>
-        <div class="col-md-2"><%= link_to 'Show', list %></div>
-        <div class="col-md-2"><%= link_to 'Edit', edit_list_path(list) %></div>
-        <div class="col-md-2"><%= link_to 'Destroy', list , method: :delete, data: { confirm: 'Are you sure?' } %></div>
-      </div>
-    <% end %>
-
-
-
-<br>
-
-<%= link_to 'New List', new_list_path() %>
+  <div class="panel-footer">
+    <div class="actions ">
+      <%= link_to 'New Task', new_list_path(),class:"btn btn-success" %>
+    </div>
+  </div>

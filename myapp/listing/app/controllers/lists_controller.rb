@@ -8,6 +8,7 @@ class ListsController < ApplicationController
     
     $globalid = params.require(:my_list_id)
     @lists = List.where(:my_list_id => $globalid)
+    @head_name = MyList.find_by_id($globalid.to_i).name
     #@lists = List.all
   end
 

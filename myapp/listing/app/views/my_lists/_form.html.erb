@@ -1,8 +1,9 @@
 <%= form_for(my_list) do |f| %>
   <% if my_list.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(my_list.errors.count, "error") %> prohibited this my_list from being saved:</h2>
-
+     
+      <div id="error_explanation" class=" form-group">
+        <h2><%= pluralize(my_list.errors.count, "error") %> prohibited this my_list from being saved:</h2>
+  
       <ul>
       <% my_list.errors.full_messages.each do |message| %>
         <li><%= message %></li>
@@ -12,11 +13,13 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.label :name%>
+    <%= f.text_field :name , class:"form-control" %>
   </div>
 
+
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit  class:"btn btn-primary"%>
   </div>
+
 <% end %>
