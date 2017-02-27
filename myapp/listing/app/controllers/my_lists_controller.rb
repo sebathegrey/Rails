@@ -61,10 +61,10 @@ class MyListsController < ApplicationController
       format.json { head :no_content }
     end
   end
-    def correct_user
-      @my_list = current_user.my_lists.find_by(id: params[:id])
-      redirect_to my_lists_path, notice: "You don't have permission" if @my_list.nil?
-    end
+  def correct_user
+    @my_list = current_user.my_lists.find_by(id: params[:id])
+    redirect_to my_lists_path, notice: "You don't have permission" if @my_list.nil?
+  end
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_my_list
@@ -76,5 +76,4 @@ class MyListsController < ApplicationController
       params.require(:my_list).permit(:name)
     end
 
-
-end
+  end

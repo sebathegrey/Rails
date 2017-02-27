@@ -5,11 +5,10 @@ class ListsController < ApplicationController
   # GET /lists
   # GET /lists.json
   def index
-    
+
     $globalid = params.require(:my_list_id)
     @lists = List.where(:my_list_id => $globalid)
     @head_name = MyList.find_by_id($globalid.to_i).name
-    #@lists = List.all
   end
 
   # GET /lists/1
@@ -21,8 +20,7 @@ class ListsController < ApplicationController
   def new
 
    @list = List.new
-
-    @list.my_list= MyList.find_by_id($globalid.to_i)
+   @list.my_list= MyList.find_by_id($globalid.to_i)
   end
 
   # GET /lists/1/edit
@@ -34,13 +32,13 @@ class ListsController < ApplicationController
   def create
 
     @list = List.new(list_params)
-
     @list.my_list= MyList.find_by_id($globalid.to_i)
-
 
     respond_to do |format|
       if @list.save
-        format.html { redirect_to @list, notice: 'List was successfully created.' }
+        ActionCable.server.broadcast 'live_channel', description: @list.description, done: @list.done
+        
+        format.html { redirect_to lists_url(:my_list_id => $globalid), notice: 'List was successfully created.' }
         format.json { render :show, status: :created, location: @list }
       else
         format.html { render :new }
@@ -83,4 +81,4 @@ class ListsController < ApplicationController
     def list_params
       params.require(:list).permit(:description, :done, :list_id)
     end
-end
+  end

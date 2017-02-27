@@ -1,30 +1,26 @@
 <%= form_for(list) do |f| %>
-  <% if list.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(list.errors.count, "error") %> prohibited this list from being saved:</h2>
+<% if list.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(list.errors.count, "error") %> prohibited this list from being saved:</h2>
 
-      <ul>
-      <% list.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-      
+  <ul>
+    <% list.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+<div class="form-group">
+  <%= f.label :description , class:"form"%>
+  <%= f.text_field :description, class:"form-control"%>
+</div>
 
-  <div class="form-group">
-    <%= f.label :description , class:"form"%>
-    <%= f.text_field :description, class:"form-control"%>
-  </div>
+<div class="form-group">
+  <%= f.label :done %>
+  <%= f.check_box :done %>
+</div>
 
-  <div class="form-group">
-    <%= f.label :done %>
-    <%= f.check_box :done %>
-  </div>
-
-
-
-  <div class="actions">
-    <%= f.submit class:"btn btn-primary"%>
-  </div>
+<div class="actions">
+  <%= f.submit class:"btn btn-primary"%>
+</div>
 <% end %>
