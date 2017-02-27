@@ -16,10 +16,3 @@ App.live = App.cable.subscriptions.create "LiveChannel",
           	'<div class="col-md-2 form-group mydivel"></div>'+
          	'<div class="col-md-2 form-group mydivel"></div>'+
          	'<div class="col-md-2 form-group mydivel"></div></div>'
-
-$(document).on 'turbolinks:load', -> submit_message()
-
-submit_message = () ->
-  $('#livediv').on 'keydown', (event) ->
-    if event.keyCode is 13
-      console.log(event)
